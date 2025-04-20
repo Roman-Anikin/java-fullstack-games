@@ -1,0 +1,94 @@
+body {
+    font-family: Fantasy;
+    font-size: 20px;
+    background-color: #333333;
+    margin: 0;
+    padding: 0;
+    color: #111111;
+}
+
+.container {
+    margin: 50px auto;
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #94DE8B;
+    border-radius: 10px;
+    text-align: center;
+    user-select: none;
+}
+
+.content-wrapper {
+    position: relative;
+    margin-top: 60px;
+}
+
+.game-selection {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin: 20px 0;
+    justify-items: center;
+}
+
+.ui-selection {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    margin: 20px 0;
+    justify-items: center;
+}
+
+.button {
+    width: 90%;
+    height: 100px;
+    background: #fff;
+    border: 2px solid #555555;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    box-sizing: border-box;
+    user-select: none;
+    border-radius: 8px;
+}
+
+.return-button {
+    position: absolute;
+    top: -130px;
+    left: 10px;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border: 2px solid #555555;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 4px;
+    font-size: 28px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    box-sizing: border-box;
+    user-select: none;
+    border-radius: 8px;
+}
+
+.button:hover, .return-button:hover {
+    background-color: #BAE0BD;
+}
+
+.fade-enter-active, .fade-leave-active {
+    transition: all 0.5s ease;
+}
+
+.fade-enter-from {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.fade-leave-to {
+    opacity: 0;
+    transform: translateY(-20px);
+}

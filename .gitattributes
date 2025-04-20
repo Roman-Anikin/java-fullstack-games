@@ -1,0 +1,5 @@
+*.java linguist-detectable
+*.cpp linguist-detectable
+*.js linguist-detectable
+*.css linguist-detectable
+*.html linguist-detectable
