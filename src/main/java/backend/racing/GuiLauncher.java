@@ -1,8 +1,8 @@
 package backend.racing;
 
-import ui.gui.GuiRacing;
 import javafx.application.Application;
 import javafx.stage.Stage;
+import ui.gui.GuiRacing;
 
 public class GuiLauncher extends Application {
 

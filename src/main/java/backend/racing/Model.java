@@ -15,8 +15,8 @@ import static backend.racing.GameUtils.*;
 @Component
 public class Model {
 
-    private Car playerCar;
     private final List<Car> rivalCars;
+    private Car playerCar;
     private int speed;
     private int score;
     private int highestScore;

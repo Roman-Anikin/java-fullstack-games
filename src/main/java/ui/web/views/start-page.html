@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org" lang="EN">
+<html lang="EN" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Arcade Games</title>
-    <link th:href="@{/css/start-page.css}" rel="stylesheet"/>
+    <link rel="stylesheet" th:href="@{/css/start-page.css}"/>
 </head>
 
 <body>
@@ -11,20 +11,20 @@
     <div class="container">
         <h1 id="header">Arcade Games</h1>
         <div class="content-wrapper">
-            <div class="return-button" @click="returnToGames" v-if="pagePhase !== 1">⬅</div>
-            <transition name="fade" mode="out-in">
-                <div class="game-selection" v-if="pagePhase === 1" key="games">
-                    <div class="button"
-                         v-for="game in games"
-                         @click="selectGame(game.gameId)">
+            <div @click="returnToGames" class="return-button" v-if="pagePhase !== 1">⬅</div>
+            <transition mode="out-in" name="fade">
+                <div class="game-selection" key="games" v-if="pagePhase === 1">
+                    <div @click="selectGame(game.gameId)"
+                         class="button"
+                         v-for="game in games">
                         {{ game.name }}
                     </div>
                 </div>
 
-                <div class="ui-selection" v-else key="ui">
-                    <div class="button"
-                         v-for="ui in gamesUi"
-                         @click="startGame(ui.uiId)">
+                <div class="ui-selection" key="ui" v-else>
+                    <div @click="startGame(ui.uiId)"
+                         class="button"
+                         v-for="ui in gamesUi">
                         {{ ui.name }}
                     </div>
                 </div>

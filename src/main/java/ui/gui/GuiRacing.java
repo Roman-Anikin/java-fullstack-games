@@ -26,10 +26,10 @@ public class GuiRacing implements EventHandler<KeyEvent> {
 
     private final GraphicsContext gc;
     private final PressedKey key;
-    private boolean isWindowClose;
     private final Image blackCar;
     private final Image redCar;
     private final Image greyCar;
+    private boolean isWindowClose;
 
     public GuiRacing(Stage stage, PressedKey key) {
         Canvas canvas = new Canvas(GAME_FIELD_WIDTH * DOT_WIDTH + SCORE_FIELD_WIDTH * 6,

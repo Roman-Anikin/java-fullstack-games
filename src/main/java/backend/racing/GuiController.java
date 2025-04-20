@@ -1,7 +1,7 @@
 package backend.racing;
 
-import ui.gui.GuiRacing;
 import javafx.animation.AnimationTimer;
+import ui.gui.GuiRacing;
 
 public class GuiController {
 
