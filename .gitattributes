@@ -1,3 +1,6 @@
+*.dll linguist-vendored
+*.a linguist-vendored
+
 *.java linguist-detectable
 *.cpp linguist-detectable
 *.js linguist-detectable
