@@ -1,6 +1,13 @@
 *.dll linguist-vendored
 *.a linguist-vendored
 
+src/main/java/backend/snake/json.hpp linguist-vendored
+src/main/java/backend/snake/httplib.h linguist-vendored
+
+src/main/java/ui/tui/pdcurses/curses.h linguist-generated
+src/main/java/ui/tui/pdcurses/curspriv.h linguist-generated
+src/main/java/ui/tui/pdcurses/panel.h linguist-generated
+
 *.java linguist-detectable
 *.cpp linguist-detectable
 *.js linguist-detectable
